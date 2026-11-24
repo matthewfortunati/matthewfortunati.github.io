@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matthew Fortunati · Links</title>
+<meta name="description" content="Sound engineer, composer, DSP. Music, portfolio and contacts.">
+<meta name="author" content="Matthew Fortunati">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Matthew Fortunati">
+<meta property="og:description" content="Sound engineer, composer, DSP.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171b19'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='%235cc4b8' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono&display=swap">
+<script>document.documentElement.className += ' js';</script>
+<!-- Optional, free click analytics (see README): put your GoatCounter code in place of YOURCODE and remove the comment marks around the next line. -->
+<!-- <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script> -->
+<style>
+  :root {
+    --bg: #000;
+    --fg: #f1f2ee;
+    --fg-2: #8b918d;
+    --line: #222523;
+    --edge: #3a3e3b;
+    --accent: #5cc4b8;
+    --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    --arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 11.5l7-7M6 4.5h5.5V10' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { background: var(--bg); -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--display); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--accent); color: var(--bg); }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap {
+    max-width: 540px; margin: 0 auto;
+    padding: calc(56px + env(safe-area-inset-top, 0px)) max(20px, env(safe-area-inset-right, 0px)) calc(64px + env(safe-area-inset-bottom, 0px)) max(20px, env(safe-area-inset-left, 0px));
+  }
+  @media (min-width: 700px) { .wrap { padding-top: 96px; } }
+
+  /* ---- name */
+  h1 { margin: 0; font-weight: 700; font-size: clamp(2.7rem, 12.5vw, 3.9rem); line-height: 0.96; letter-spacing: -0.025em; font-variation-settings: "opsz" 96; font-variant-ligatures: no-common-ligatures; text-wrap: balance; }
+  .lead { margin: 14px 0 0; font-size: 1.12rem; line-height: 1.4; letter-spacing: -0.005em; color: var(--fg-2); }
+  .hw { display: inline-block; white-space: nowrap; }
+  .hl { display: inline-block; text-align: center; }
+
+  /* ---- links */
+  .lead + .links { margin-top: 40px; }
+  .group { margin-top: 44px; }
+  .eyebrow { margin: 0 0 8px; font-family: var(--mono); font-size: 0.72rem; font-weight: 400; line-height: 1.4; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-2); }
+  .links { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .links > li { position: relative; border-bottom: 1px solid var(--line); }
+  .link { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: center; min-height: 64px; padding: 13px 4px 13px 0; color: var(--fg); text-decoration: none; transition: opacity 0.25s; }
+  .link .t { grid-column: 1; font-weight: 600; font-size: 1.16rem; line-height: 1.2; letter-spacing: -0.01em; font-variant-ligatures: no-common-ligatures; }
+  .link .m { grid-column: 1; margin-top: 3px; font-family: var(--mono); font-size: 0.72rem; line-height: 1.4; letter-spacing: 0.02em; color: var(--fg-2); overflow-wrap: anywhere; transition: color 0.2s; }
+  .link::after {   /* the arrow, drawn by CSS so a link needs no extra markup */
+    content: ""; grid-column: 2; grid-row: 1 / span 2; width: 15px; height: 15px; color: var(--fg-2); background: currentColor;
+    -webkit-mask: var(--arrow) center / contain no-repeat; mask: var(--arrow) center / contain no-repeat;
+    transition: transform 0.35s var(--ease), color 0.2s;
+  }
+  .link:active { opacity: 0.5; transition-duration: 0s; }
+  @media (hover: hover) {
+    .link:hover .m { color: var(--fg); }
+    .link:hover::after { color: var(--accent); transform: translate(2px, -2px); }
+  }
+
+  /* a link marked class="link is-new" gets a pulsing dot */
+  .link.is-new .m::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: var(--accent); vertical-align: 1px; animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.25; } }
+
+  /* the email row: the copy button takes the arrow's place */
+  .links > li.mail .link { padding-right: 84px; }
+  .links > li.mail .link::after { content: none; }
+  .copy { position: absolute; right: 0; top: 50%; z-index: 1; transform: translateY(-50%); padding: 8px 13px; border: 1px solid var(--edge); border-radius: 999px; background: var(--bg); color: var(--fg); font-family: var(--mono); font-size: 0.72rem; line-height: 1; cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+  .copy:hover { border-color: var(--fg-2); }
+  .copy[data-done] { border-color: var(--accent); color: var(--accent); }
+  @media (pointer: coarse) { .copy { padding: 11px 15px; } }
+
+  /* ---- round cursor (mouse only), as on the portfolio */
+  .dot { position: fixed; left: 0; top: 0; z-index: 60; width: 0; height: 0; pointer-events: none; mix-blend-mode: difference; opacity: 0; transition: opacity 0.2s; }
+  .dot.on { opacity: 1; }
+  .dot i { position: absolute; left: -22px; top: -22px; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 1.5px #fff; transform: scale(0.36); transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.2, 1), background-color 0.22s; }
+  .dot.over i { transform: scale(1); background: transparent; }
+  .dot.down i { transform: scale(0.27); }
+  .dot.over.down i { transform: scale(0.84); }
+  html.has-dot, html.has-dot * { cursor: none !important; }
+  @media print { .dot { display: none; } }
+
+  /* ---- entrance: everything rises into place in reading order */
+  @media (prefers-reduced-motion: no-preference) {
+    .js h1, .js .lead, .js .group > h2, .js .links > li {
+      animation: rise 0.8s var(--ease) both;
+      animation-delay: calc(var(--i, 0) * 55ms + 80ms);
+    }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; }
+    .link.is-new .m::before { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Matthew Fortunati</h1>
+  <p class="lead">Sound engineer, composer, DSP.</p>
+
+  <!-- ===================================== YOUR LINKS =====================================
+       One link per <li> line. To add one, copy a line and change three things:
+         href="..."          where it goes
+         <span class="t">    the title
+         <span class="m">    the small grey line under it
+       Delete a line to remove a link; move it up or down to reorder. Sections work the same way.
+       Extras (see README): class="link is-new" adds a pulsing dot, and data-from="2026-12-01" /
+       data-until="2027-01-31" on the <li> show it only between those dates.
+       ======================================================================================= -->
+
+  <ul class="links">
+    <li><a class="link" href="https://matthewfortunati.github.io/portfolio/"><span class="t">Portfolio</span><span class="m">Spazi · songs · theatre · live sound</span></a></li>
+  </ul>
+
+  <section class="group" aria-labelledby="listen">
+    <h2 class="eyebrow" id="listen">01 · Listen</h2>
+    <ul class="links">
+      <li><a class="link" href="https://www.youtube.com/watch?v=kMgKYrUO6gs"><span class="t">Stones</span><span class="m">with Marta Del Grandi · video · 2024</span></a></li>
+      <li><a class="link" href="https://open.spotify.com/track/7koLPJEhmpznMEC43oZAJO"><span class="t">Headlight</span><span class="m">song · 2023</span></a></li>
+      <li><a class="link" href="https://www.youtube.com/watch?v=QJnPSI96LRw"><span class="t">Il Granchio</span><span class="m">video · 2023</span></a></li>
+      <li><a class="link" href="https://open.spotify.com/album/0uFln2nBwX3Dr1ifdkmXZW"><span class="t">La Minaccia</span><span class="m">single · 2023</span></a></li>
+      <li><a class="link" href="https://open.spotify.com/album/0PPTi1wHAFtXF6i3tk3KWp"><span class="t">Trails</span><span class="m">Blanket Fort · single · 2020</span></a></li>
+      <li><a class="link" href="https://open.spotify.com/album/6pNPbtr40UGcT7aMAcck8E"><span class="t">Super Taller</span><span class="m">Blanket Fort · album · 2018</span></a></li>
+      <li><a class="link" href="https://open.spotify.com/album/03Hpl9ZBrfPzFsAEoancuq"><span class="t">The Best You Can Is Good Enough</span><span class="m">Blanket Fort · EP · 2015</span></a></li>
+    </ul>
+  </section>
+
+  <section class="group" aria-labelledby="elsewhere">
+    <h2 class="eyebrow" id="elsewhere">02 · Elsewhere</h2>
+    <ul class="links">
+      <li><a class="link" href="https://open.spotify.com/artist/4OZtdkBB690aQINdzIXaCW"><span class="t">Spotify</span><span class="m">artist profile</span></a></li>
+      <li><a class="link" href="https://matthewfortunati.bandcamp.com"><span class="t">Bandcamp</span><span class="m">album · EPs · BBC Radio 4</span></a></li>
+      <li><a class="link" href="https://www.linkedin.com/in/matthewfortunati/"><span class="t">LinkedIn</span><span class="m">work · CV</span></a></li>
+      <li class="mail"><a class="link" href="mailto:matthewfortunati@gmail.com"><span class="t">Email</span><span class="m">matthewfortunati@gmail.com</span></a><button class="copy" type="button">copy</button></li>
+    </ul>
+  </section>
+</main>
+
+<script>
+(function () {
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+
+  // iPhones only show the pressed look (:active) of a link when the page listens for touches.
+  document.addEventListener('touchstart', function () {}, { passive: true });
+
+  // Scheduled links: data-from / data-until="YYYY-MM-DD" on an <li> show it only between those dates (local time).
+  var d = new Date();
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  var today = d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  each(document.querySelectorAll('[data-from], [data-until]'), function (el) {
+    var from = el.getAttribute('data-from'), until = el.getAttribute('data-until');
+    if ((from && today < from) || (until && today > until)) el.hidden = true;
+  });
+  each(document.querySelectorAll('.group'), function (g) {      // a section with nothing left to show goes too
+    if (!g.querySelector('.links > li:not([hidden])')) g.hidden = true;
+  });
+
+  // The entrance cascade runs in reading order.
+  var n = 0;
+  each(document.querySelectorAll('h1, .lead, .group > h2, .links > li'), function (el) {
+    if (el.hidden || (el.parentNode.closest && el.parentNode.closest('[hidden]'))) return;
+    el.style.setProperty('--i', Math.min(n++, 16));
+  });
+
+  // Copy the email address (in-app browsers often have no mail app set up).
+  each(document.querySelectorAll('.copy'), function (b) {
+    b.addEventListener('click', function () {
+      var a = b.parentNode.querySelector('a[href^="mailto:"]');
+      var text = a ? decodeURIComponent(a.getAttribute('href').slice(7).split('?')[0]) : '';
+      function done() {
+        b.textContent = 'copied'; b.setAttribute('data-done', '');
+        clearTimeout(b.later);
+        b.later = setTimeout(function () { b.textContent = 'copy'; b.removeAttribute('data-done'); }, 1600);
+      }
+      function legacy() {
+        var t = document.createElement('textarea');
+        t.value = text; t.setAttribute('readonly', ''); t.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(t); t.select(); t.setSelectionRange(0, text.length);
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(t);
+        if (ok) done();
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, legacy);
+      else legacy();
+    });
+  });
+
+  // Optional analytics: once GoatCounter is switched on in <head>, every tap on a link is counted under its title.
+  each(document.querySelectorAll('a.link'), function (a) {
+    var t = a.querySelector('.t');
+    if (t) a.setAttribute('data-name', t.textContent.replace(/\s+/g, ' ').trim());
+  });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-name]');
+    if (!a || !window.goatcounter || !window.goatcounter.count) return;
+    var name = a.getAttribute('data-name');
+    window.goatcounter.count({ path: 'click/' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), title: name, event: true });
+  });
+})();
+</script>
+
+<script>
+(function () {
+  // Type that reacts, as on the portfolio. The name and the link titles are set in a variable font: each letter gets
+  // a box of fixed width, so its weight can follow the cursor or a finger without moving anything around it. A wave
+  // crosses each title once, as it lands. The small mono labels shuffle their letters for a moment.
+  // None of this runs with reduced motion.
+  if (!window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!window.requestAnimationFrame || !document.createRange || !window.IntersectionObserver || !Element.prototype.closest) return;
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+
+  var T0 = performance.now();
+  function landed(el) {                       // when el has nearly finished rising into place (the cascade in the CSS)
+    var box = el.closest('[style*="--i"]');
+    var i = box ? parseFloat(box.style.getPropertyValue('--i')) || 0 : 0;
+    return T0 + 80 + i * 55 + 320;
+  }
+
+  // name each link once, before any of its letters move
+  each(document.querySelectorAll('a.link'), function (a) {
+    var t = a.querySelector('.t'), m = a.querySelector('.m');
+    if (t) a.setAttribute('aria-label', t.textContent + (m ? ', ' + m.textContent : ''));
+  });
+
+  // ---- mono labels
+
+  var ABC = 'abcdefghijklmnopqrstuvwxyz';
+  function shuffler(el) {
+    var busy = false;
+    return function () {
+      if (busy || /\btranslated-/.test(document.documentElement.className)) return;   // leave translated pages alone
+      busy = true;
+      var text = el.textContent, began = performance.now(), drawn = 0;
+      (function step(now) {
+        var settled = Math.floor((now - began - 120) / 22);         // letters come to rest left to right
+        if (settled >= text.length) { el.textContent = text; busy = false; return; }
+        if (now - drawn > 45) {
+          drawn = now;
+          var out = '';
+          for (var i = 0; i < text.length; i++) {
+            var c = text.charAt(i), low = c.toLowerCase();
+            if (i < settled || low === c.toUpperCase()) out += c;   // already at rest, or not a letter
+            else { var r = ABC.charAt(Math.floor(Math.random() * 26)); out += c === low ? r : r.toUpperCase(); }
+          }
+          el.textContent = out;
+        }
+        requestAnimationFrame(step);
+      })(began);
+    };
+  }
+  var labels = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      labels.unobserve(en.target);
+      setTimeout(en.target.shuffle, Math.max(0, landed(en.target) - 120 - performance.now()));
+    });
+  }, { threshold: 0.9 });
+  each(document.querySelectorAll('.group > h2, .link .m'), function (el) {
+    if (el.childNodes.length !== 1 || el.firstChild.nodeType !== 3) return;
+    if (el.tagName === 'H2') el.setAttribute('aria-label', el.textContent);
+    el.shuffle = shuffler(el);
+    var a = el.closest('a');
+    if (a) a.addEventListener('mouseenter', el.shuffle);
+    labels.observe(el);
+  });
+
+  // ---- titles
+
+  var THIN = 300;                                   // lightest weight in the font file
+  var heads = [], spot = { x: 0, y: 0, on: false };
+  var queued = false, awake = false, before = 0;
+
+  function variable(el) {
+    var probe = document.createElement('span'), wide;
+    probe.textContent = 'Hamburgefons';
+    probe.style.cssText = 'position:absolute;left:-99em;top:0;white-space:nowrap;font-size:64px;font-variation-settings:"wght" 300';
+    el.appendChild(probe);
+    wide = probe.getBoundingClientRect().width;
+    probe.style.fontVariationSettings = '"wght" 800';
+    wide = Math.abs(probe.getBoundingClientRect().width - wide);
+    el.removeChild(probe);
+    return wide > 2;
+  }
+
+  function split(el) {
+    var node = el.firstChild;
+    if (!node || node.nodeType !== 3 || el.childNodes.length !== 1) return;
+    var style = getComputedStyle(el), size = parseFloat(style.fontSize), extra = style.fontVariationSettings;
+    var rest = parseInt(style.fontWeight, 10) || 700, text = node.nodeValue;
+    var range = document.createRange(), holder = document.createElement('span'), word = null, i;
+    var h = { el: el, rest: rest, pre: extra && extra !== 'normal' ? extra + ', ' : '',
+              letters: [], x: [], y: [], dip: [], shown: [], em: size, from: 0, wide: 1, seen: false, met: false, wave: 0,
+              notBefore: landed(el) };
+    var run = [], own = [];
+    for (i = 0; i < text.length; i++) {
+      var c = text.charAt(i);
+      if (/\s/.test(c)) {
+        if (word) { holder.appendChild(document.createTextNode(' ')); word = null; }
+        continue;
+      }
+      range.setStart(node, i);
+      range.setEnd(node, i + 1);
+      run.push(range.getBoundingClientRect().width);                // the space the letter takes in the running text
+      if (!word) { word = document.createElement('span'); word.className = 'hw'; holder.appendChild(word); }
+      var s = document.createElement('span');
+      s.className = 'hl';
+      s.textContent = c;
+      word.appendChild(s);
+      h.letters.push(s); h.dip.push(0); h.shown.push(rest);
+    }
+    holder.setAttribute('aria-hidden', 'true');
+    holder.setAttribute('translate', 'no');
+    holder.className = 'notranslate';
+    if (!el.closest('a')) el.setAttribute('aria-label', text.replace(/\s+/g, ' ').replace(/^ | $/g, ''));
+    el.textContent = '';
+    el.appendChild(holder);
+    for (i = 0; i < h.letters.length; i++) own.push(h.letters[i].getBoundingClientRect().width);
+    for (i = 0; i < h.letters.length; i++) {
+      h.letters[i].style.width = (own[i] / size).toFixed(4) + 'em';                                       // its own width, fixed
+      if (Math.abs(run[i] - own[i]) > 0.02) h.letters[i].style.marginRight = ((run[i] - own[i]) / size).toFixed(4) + 'em';   // kerning
+    }
+    heads.push(h);
+  }
+
+  function measure(h) {
+    var box = h.el.getBoundingClientRect(), left = Infinity, right = -Infinity;
+    h.em = parseFloat(getComputedStyle(h.el).fontSize) || h.em;
+    for (var i = 0; i < h.letters.length; i++) {
+      var r = h.letters[i].getBoundingClientRect();
+      h.x[i] = r.left + r.width / 2 - box.left;
+      h.y[i] = r.top + r.height / 2 - box.top;
+      if (r.left < left) left = r.left;
+      if (r.right > right) right = r.right;
+    }
+    h.from = left - box.left;
+    h.wide = Math.max(1, right - left);
+  }
+
+  function still(h) {
+    h.wave = 0;
+    for (var i = 0; i < h.letters.length; i++) {
+      h.dip[i] = 0;
+      if (h.shown[i] !== h.rest) { h.shown[i] = h.rest; h.letters[i].style.fontVariationSettings = ''; }
+    }
+  }
+
+  function wake() {
+    if (queued) return;
+    queued = true;
+    if (!awake) { awake = true; before = performance.now(); }
+    requestAnimationFrame(frame);
+  }
+
+  function frame(now) {
+    queued = false;
+    var dt = Math.min(0.1, Math.max(0, (now - before) / 1000));
+    before = now;
+    var busy = false;
+
+    heads.forEach(function (h) {
+      if (!h.seen) { still(h); return; }
+      var box = null, near = false, front = 0, waving = false, soft = h.em * 1.1, reach = h.em * 1.3;
+      if (spot.on) {
+        box = h.el.getBoundingClientRect();
+        near = spot.x > box.left - 3 * reach && spot.x < box.right + 3 * reach && spot.y > box.top - 3 * reach && spot.y < box.bottom + 3 * reach;
+      }
+      if (h.wave) {
+        if (now < h.wave) busy = true;                              // still waiting for the title to land
+        else {
+          front = (now - h.wave) / 1000 * 11 * h.em - 2.5 * soft;   // the wave crosses the title once
+          if (front > h.wide + 2.5 * soft) h.wave = 0; else { busy = true; waving = true; }
+        }
+      }
+      for (var i = 0; i < h.letters.length; i++) {
+        var want = 0;
+        if (near) {
+          var dx = spot.x - box.left - h.x[i], dy = spot.y - box.top - h.y[i];
+          want = Math.exp(-(dx * dx + dy * dy) / (2 * reach * reach));
+        }
+        if (waving) {
+          var q = (h.x[i] - h.from - front) / soft;
+          want = Math.max(want, 0.85 * Math.exp(-q * q / 2));
+        }
+        var d = h.dip[i];
+        d += (want - d) * (1 - Math.exp(-dt / (want > d ? 0.07 : 0.4)));   // quick to thin, slow to come back
+        if (d < 0.004 && want < 0.004) d = 0;
+        if (Math.abs(want - d) > 0.004) busy = true;
+        h.dip[i] = d;
+        var weight = h.rest - Math.round((h.rest - THIN) * d / 8) * 8;
+        if (weight !== h.shown[i]) {
+          h.shown[i] = weight;
+          h.letters[i].style.fontVariationSettings = weight === h.rest ? '' : h.pre + '"wght" ' + weight;
+        }
+      }
+    });
+
+    if (busy) wake(); else awake = false;
+  }
+
+  function titles() {
+    var name = document.querySelector('h1');
+    if (heads.length || !name || !variable(name)) return;
+    split(name);
+    each(document.querySelectorAll('.link .t'), function (el) {
+      if (el.getClientRects().length) split(el);                   // skip links that are scheduled out
+    });
+    heads.forEach(measure);
+
+    var watch = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        heads.forEach(function (h) {
+          if (h.el !== en.target) return;
+          h.seen = en.isIntersecting;
+          if (h.seen && !h.met && en.intersectionRatio > 0.6) { h.met = true; h.wave = Math.max(performance.now() + 200, h.notBefore); }
+        });
+      });
+      wake();
+    }, { threshold: [0, 0.7] });
+    heads.forEach(function (h) { watch.observe(h.el); });
+
+    // a mouse is followed all the time, a finger only while it is on the screen
+    function point(e) {
+      if (e.pointerType === 'touch' && e.type === 'pointermove' && !spot.on) return;
+      spot.x = e.clientX; spot.y = e.clientY; spot.on = true;
+      wake();
+    }
+    function lift(e) { if (!e.pointerType || e.pointerType === 'touch') { spot.on = false; wake(); } }
+    window.addEventListener('pointermove', point, { passive: true });
+    window.addEventListener('pointerdown', point, { passive: true });
+    window.addEventListener('pointerup', lift, { passive: true });
+    window.addEventListener('pointercancel', lift, { passive: true });
+    document.documentElement.addEventListener('mouseleave', lift);
+    window.addEventListener('scroll', function () { if (spot.on) wake(); }, { passive: true });
+    var again = 0;
+    function resized() {
+      clearTimeout(again);
+      again = setTimeout(function () { heads.forEach(measure); wake(); }, 150);
+    }
+    window.addEventListener('resize', resized);
+    if (window.ResizeObserver) {
+      var sizes = new ResizeObserver(resized);
+      heads.forEach(function (h) { sizes.observe(h.el); });
+    }
+  }
+
+  var first = document.querySelector('h1');
+  if (first && document.fonts && document.fonts.load) {
+    var face = getComputedStyle(first);
+    document.fonts.load(face.fontWeight + ' ' + face.fontSize + ' ' + face.fontFamily, first.textContent)
+      .then(function () { requestAnimationFrame(titles); }, function () {});
+  }
+})();
+</script>
+
+<script>
+(function () {
+  // A round cursor for people using a mouse. It inverts what is underneath.
+  var fine = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var forced = window.matchMedia && window.matchMedia('(forced-colors: active)').matches;
+  if (!fine || forced || !window.CSS || !CSS.supports || !CSS.supports('mix-blend-mode', 'difference')) return;
+
+  var HOT = 'a, button, summary, label, input, select, textarea, [role="button"]';
+  var root = document.documentElement, dot = document.createElement('div'), shown = false;
+  dot.className = 'dot';
+  dot.setAttribute('aria-hidden', 'true');
+  dot.appendChild(document.createElement('i'));
+  document.body.appendChild(dot);
+
+  function hide() { shown = false; dot.classList.remove('on'); }
+  function move(e) {
+    if (e.pointerType === 'touch') { hide(); return; }
+    dot.style.transform = 'translate3d(' + e.clientX + 'px,' + e.clientY + 'px,0)';
+    if (!shown) { shown = true; dot.classList.add('on'); root.classList.add('has-dot'); }
+  }
+  window.addEventListener(window.PointerEvent ? 'pointermove' : 'mousemove', move, { passive: true });
+  document.addEventListener('mouseover', function (e) {
+    dot.classList.toggle('over', !!(e.target && e.target.closest && e.target.closest(HOT)));
+  });
+  window.addEventListener('mousedown', function () { dot.classList.add('down'); });
+  window.addEventListener('mouseup', function () { dot.classList.remove('down'); });
+  root.addEventListener('mouseleave', hide);
+  window.addEventListener('blur', hide);
+})();
+</script>
+</body>
+</html>
